@@ -13,7 +13,7 @@ def index():
         # Your existing code to make predictions goes here
         # ...
 
-        return render_template('result.html', predicted_value=inverse_scaled_value[0][0], accuracy=accuracy)
+        return render_template('results.html', predicted_value=inverse_scaled_value[0][0], accuracy=accuracy)
     return render_template('index.html')
 
 if __name__ == '__main__':
